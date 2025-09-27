@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*----------------------------------------------------------------*/
+/*-- Primer contenedor (cabecera , inicio de camila) --*/
+
+header{
+    background-color: #33691e;
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+/*------------------ TOP ------------------*/
+
+.Top-Cabecera{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 2px 0 2px 0;
+    border-bottom: 1px solid white;
+    flex-direction: row;
+}
+.Top-Cabecera-Derecha{
+    display: flex;
+    height: 60px;
+    width: 782;
+    padding:  0px 25px 0px 40px;
+}
+.Top-Cabecera-Logo{
+    padding-right: 25px;
+}
+.Top-Cabecera-Logo img{
+    height: 24px;
+    width: 100px;
+}
+.Top-Cabecera-Menu{
+    display: flex;
+    align-items: center;
+    padding: 4px 0px 25px 25px;
+}
+.Top-Cabecera-Menu-Item{
+    padding: 10px 16px;
+}
+#Centro{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.Top-Cabecera-Settings{
+    display: flex;
+}
+
+/*----------------------------------------------------------------*/
+/*------------------ MEDIUM ------------------*/
+.Medium-Cabecera{
+    background-color: white;
+}
+
+/*------------------ MEDIUM ------------------*/
