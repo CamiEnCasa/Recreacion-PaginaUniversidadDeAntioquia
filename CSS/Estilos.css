@@ -1,22 +1,20 @@
+/*----------------------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 1.5px;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 /*----------------------------------------------------------------*/
 /*-- Primer contenedor (cabecera , inicio de camila) --*/
-
 header{
     background-color: #33691e;
     color: white;
     font-size: 14px;
-    font-family: "Roboto Condensed", sans-serif;
-
 }
 /*------------------ TOP ------------------*/
-
+/*------GENERAL------*/
 .Top-Cabecera{
     display: flex;
     justify-content: space-between;
@@ -25,12 +23,14 @@ header{
     border-bottom: 1px solid white;
     flex-direction: row;
 }
-.Top-Cabecera-Derecha{
+/*----LADO_DERECHO----*/
+.Top-Cabecera-Izquierda{
     display: flex;
+    align-items: center;
     height: 60px;
-    width: 782;
     padding:  0px 25px 0px 40px;
 }
+/*--LOGO--*/
 .Top-Cabecera-Logo{
     padding-right: 25px;
 }
@@ -38,26 +38,41 @@ header{
     height: 24px;
     width: 100px;
 }
+/*--MENU--*/
 .Top-Cabecera-Menu{
     display: flex;
     align-items: center;
-    padding: 4px 0px 25px 25px;
+    padding: 4px 0px 4px 25px;
 }
 .Top-Cabecera-Menu-Item{
     padding: 10px 16px;
+    height: 20px;
 }
-#Centro{
+#Centro-Item{
     border-right: 1px solid white;
     border-left: 1px solid white;
+    height: 20px;
 }
+/*--SETTINGS--*/
 .Top-Cabecera-Settings{
     display: flex;
+    gap: .75rem;
+    align-items: center;
+    padding: 0 25px;
 }
-
+.Iconos{
+    margin-right: 15px;
+}
+.Top-Cabecera-Settings img{
+    height: 15px;
+    width: 20px;
+}
 /*----------------------------------------------------------------*/
 /*------------------ MEDIUM ------------------*/
 .Medium-Cabecera{
     background-color: white;
 }
+/*----------------------------------------------------------------*/
+/*------------------ BOTTOM ------------------*/
 
-/*------------------ MEDIUM ------------------*/
+/*----------------------------------------------------------------*/
