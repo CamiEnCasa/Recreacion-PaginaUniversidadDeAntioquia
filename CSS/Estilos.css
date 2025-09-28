@@ -1,78 +1,163 @@
-/*----------------------------------------------------------------*/
-*{
+/*- GENERAL -*/
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", sans-serif;
-    letter-spacing: 1.5px;
 }
+
+/*- FUENTE DE LETRA -*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-/*----------------------------------------------------------------*/
-/*-- Primer contenedor (cabecera , inicio de camila) --*/
-header{
-    background-color: #33691e;
+
+/*-- CABECERA --*/
+header {
     color: white;
     font-size: 14px;
 }
-/*------------------ TOP ------------------*/
-/*------GENERAL------*/
-.Top-Cabecera{
+
+/*- TOP -*/
+.Top-Cabecera {
     display: flex;
+    background-color: #33691e;
     justify-content: space-between;
     height: 60px;
     padding: 2px 0 2px 0;
     border-bottom: 1px solid white;
     flex-direction: row;
-}
-/*----LADO_DERECHO----*/
-.Top-Cabecera-Izquierda{
-    display: flex;
-    align-items: center;
-    height: 60px;
-    padding:  0px 25px 0px 40px;
-}
-/*--LOGO--*/
-.Top-Cabecera-Logo{
-    padding-right: 25px;
-}
-.Top-Cabecera-Logo img{
-    height: 24px;
-    width: 100px;
-}
-/*--MENU--*/
-.Top-Cabecera-Menu{
-    display: flex;
-    align-items: center;
-    padding: 4px 0px 4px 25px;
-}
-.Top-Cabecera-Menu-Item{
-    padding: 10px 16px;
-    height: 20px;
-}
-#Centro-Item{
-    border-right: 1px solid white;
-    border-left: 1px solid white;
-    height: 20px;
-}
-/*--SETTINGS--*/
-.Top-Cabecera-Settings{
-    display: flex;
-    gap: .75rem;
-    align-items: center;
-    padding: 0 25px;
-}
-.Iconos{
-    margin-right: 15px;
-}
-.Top-Cabecera-Settings img{
-    height: 15px;
-    width: 20px;
-}
-/*----------------------------------------------------------------*/
-/*------------------ MEDIUM ------------------*/
-.Medium-Cabecera{
-    background-color: white;
-}
-/*----------------------------------------------------------------*/
-/*------------------ BOTTOM ------------------*/
+    letter-spacing: .75px;
 
-/*----------------------------------------------------------------*/
+    /*----LADO_IZQUIERDO----*/
+    .Top-Cabecera-Izquierda {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 0px 25px 0px 40px;
+
+        /*--LOGO--*/
+        .Top-Cabecera-Logo {
+            padding-right: 25px;
+        }
+
+        .Top-Cabecera-Logo img {
+            height: 24px;
+            width: 100px;
+        }
+
+        /*--MENU--*/
+        .Top-Cabecera-Menu {
+            display: flex;
+            align-items: center;
+            padding: 4px 0px 4px 25px;
+
+            .Top-Cabecera-Menu-Item {
+                padding: 10px 16px;
+                height: 20px;
+            }
+
+            #Centro-Item {
+                border-right: 1px solid white;
+                border-left: 1px solid white;
+                height: 20px;
+            }
+        }
+    }
+
+    /*--SETTINGS / LADO DERECHO--*/
+    .Top-Cabecera-Settings {
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+        padding: 0 25px;
+
+        .Iconos {
+            margin-right: 15px;
+        }
+    }
+
+    .Top-Cabecera-Settings img {
+        height: 15px;
+        width: 20px;
+    }
+}
+
+/*- MEDIUM -*/
+.Medium-Cabecera {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 98px;
+    font-size: 17px;
+
+    .Medium-Cabecera-Izquierda {
+        display: flex;
+
+        .Medium-Cabecera-Logo img {
+            padding-left: 28px;
+            height: 42px;
+            width: 170px;
+        }
+        .Medium-Cabecera-Menu {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .Medium-Cabecera-Menu-Item {
+        padding: 0 16px;
+    }
+
+    .Medium-Cabecera-Medio {
+        display: flex;
+        align-items: center;
+    }
+
+    .Medium-Cabecera-Derecha {
+        display: flex;
+        gap: 20px;
+    }
+
+    .Medium-Cabecera-Derecha-Item1 {
+        display: flex;
+    }
+
+    .Medium-Cabecera-Derecha-Item2 {
+        display: flex;
+    }
+}
+
+/*- BOTTOM -*/
+.Bottom-Cabecera {
+    background-color: #33691e;
+    display: flex;
+}
+
+/*-- CUERPO --*/
+
+/*-- Primer contenedor --*/
+
+.Primer-Contenedor-Carucel img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Segundo-Contenedor-Flexbox {
+    display: flex;
+    align-items: center;
+    margin: 0 150px;
+}
+
+.Segundo-Contenedor-Flexbox-General img{
+    height: 500px;
+}
+
+.Segundo-Contenedor-Flexbox-Subgenerales img{
+    height: 150px;
+}
+
+.Contenedor {
+    display: flex;
+    height: 60px;
+}
+
+/*------------------------------PARTE DE NUBIA----------------------------------*/
