@@ -5,9 +5,6 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
-/*- FUENTE DE LETRA -*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 /*-- CABECERA --*/
 header {
     color: white;
@@ -42,6 +39,10 @@ header {
             width: 100px;
         }
 
+        .Top-Cabecera-Logo:hover {
+            background-color: rgba(128, 128, 128, 0.418);
+        }
+
         /*--MENU--*/
         .Top-Cabecera-Menu {
             display: flex;
@@ -53,12 +54,17 @@ header {
                 height: 20px;
             }
 
+            .Top-Cabecera-Menu-Item:hover {
+                background-color: rgba(128, 128, 128, 0.418);
+            }
+
             #Centro-Item {
                 border-right: 1px solid white;
                 border-left: 1px solid white;
                 height: 20px;
             }
         }
+
     }
 
     /*--SETTINGS / LADO DERECHO--*/
@@ -70,6 +76,12 @@ header {
 
         .Iconos {
             margin-right: 15px;
+        }
+
+        .Iconos:hover {
+            background-color: rgba(128, 128, 128, 0.418);
+            padding: 2px;
+            border-radius: 40%;
         }
     }
 
@@ -88,6 +100,7 @@ header {
     align-items: center;
     margin: 0px 98px;
     font-size: 17px;
+    font-size: 17px;
 
     .Medium-Cabecera-Izquierda {
         display: flex;
@@ -97,6 +110,7 @@ header {
             height: 42px;
             width: 170px;
         }
+
         .Medium-Cabecera-Menu {
             display: flex;
             align-items: center;
@@ -104,25 +118,77 @@ header {
     }
 
     .Medium-Cabecera-Menu-Item {
-        padding: 0 16px;
+        padding: 8px 10px;
+    }
+
+    .Medium-Cabecera-Menu-Item:hover {
+        background-color: rgba(128, 128, 128, 0.233);
+        padding: 8px 10px;
     }
 
     .Medium-Cabecera-Medio {
         display: flex;
         align-items: center;
+        height: 135px;
+    }
+
+    .Medium-Cabecera-Medio-Logo img {
+        height: 40px;
+        width: 60px;
+    }
+
+    .Medium-Cabecera-Medio-Radio {
+        display: flex;
+        color: #33691e;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .Medium-Cabecera-Medio-Radio:hover {
+        background-color: rgba(128, 128, 128, 0.233);
+    }
+
+    .Medium-Cabecera-Medio-Radio p {
+        gap: 20px;
+        padding: 10px;
     }
 
     .Medium-Cabecera-Derecha {
         display: flex;
-        gap: 20px;
     }
 
     .Medium-Cabecera-Derecha-Item1 {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        height: 48px;
+        color: #33691e;
+    }
+
+    .Medium-Cabecera-Derecha-Item1:hover {
+        background-color: rgba(128, 128, 128, 0.233);
+    }
+
+    .Medium-Cabecera-Derecha-Item1 p {
+        padding: 15px;
+        color: black;
     }
 
     .Medium-Cabecera-Derecha-Item2 {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        height: 48px;
+        width: 114px;
+        background-color: #ffc107;
+        border-radius: 3px;
+        box-shadow: 0.5px 2px 2px rgb(155, 155, 155);
+    }
+
+    .Medium-Cabecera-Derecha-Item2 p {
+        padding: 10px;
     }
 }
 
@@ -130,34 +196,148 @@ header {
 .Bottom-Cabecera {
     background-color: #33691e;
     display: flex;
+    align-items: center;
+    height: 93px;
+    font-size: 14px;
+
+    #Menu {
+        display: flex;
+        padding: 0 104px;
+        gap: 100px;
+    }
+
+    .Bottom-Cabecera-Item {
+        align-items: center;
+        padding: 10px;
+    }
+
+    .Bottom-Cabecera-Item:hover {
+        border-bottom: 1px solid white;
+    }
 }
 
 /*-- CUERPO --*/
 
 /*-- Primer contenedor --*/
+.Primer-Contenedor-Carucel {
+    position: relative;
+    padding-bottom: 70px;
 
-.Primer-Contenedor-Carucel img{
-    width: 100%;
-    object-fit: cover;
+    .Primer-Contenedor-Texto {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.438);
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        align-items: center;
+        font-size: 40px;
+        font-weight: bold;
+        bottom: 15.6%;
+        left: 0%;
+    }
+
+    .Primer-Contenedor-Texto p {
+        padding-top: 120px;
+        padding-left: 165px;
+    }
+
+    .Primer-Contenedor-Imagen {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
-.Segundo-Contenedor-Flexbox {
+/*-- Segundo contenedor --*/
+.Segundo-Contenedor {
+    margin: 0 100px;
+
+    .Noticias {
+        color: #33691e;
+        border-bottom: 5px solid #33691e;
+        margin-right: 166vh;
+        font-size: 40px;
+    }
+
+    .Segundo-Contenedor-Flexbox {
+        display: flex;
+        align-items: center;
+        padding-top: 52px;
+        gap: 20px;
+        padding-bottom: 80px;
+    }
+
+    .Segundo-Contenedor-Flexbox-General .Imagen img {
+        height: 352px;
+        width: 617px;
+    }
+
+    .Segundo-Contenedor-Flexbox-Subgenerales {
+        margin: 20px 0;
+        gap: 20px;
+    }
+
+    .Segundo-Contenedor-Flexbox-Subgenerales img {
+        height: 112px;
+    }
+
+    .Segundo-Contenedor-Flexbox-Subgenerales-Item {
+        display: flex;
+    }
+
+    #Texto img {
+        height: 20px;
+    }
+
+    #Texto {
+        display: flex;
+    }
+
+    .Texto2 {
+        flex-direction: row;
+    }
+
+    .Segundo-Contenedor-Boton{
+        background-color: #33691e;
+        color: white;
+    }
+}
+
+/*-- Tercer contenedor --*/
+.Tercer-Contenedor {
     display: flex;
-    align-items: center;
-    margin: 0 150px;
+    background-color: #069a7e;
+    color: white;
+    height: 220px;
+    padding: 0 0px;
+
+    .Tercer-Contenedor-Item {
+        padding: 25px 50px;
+        margin: 0 120px;
+    }
+
+    .Tercer-Contenedor-Item-Tipo {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        padding-bottom: 60px;
+    }
+
+    .Tercer-Contenedor-Item-Tipo img {
+        height: 20px;
+        padding: 0 5px;
+    }
+
+    .Tercer-Contenedor-Item:hover {
+        background-color: #069a7e;
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 29, 0, 0.541);
+    }
+
+    .Tercer-Contenedor-Item-Texto {
+        display: flex;
+    }
 }
 
-.Segundo-Contenedor-Flexbox-General img{
-    height: 500px;
-}
-
-.Segundo-Contenedor-Flexbox-Subgenerales img{
-    height: 150px;
-}
-
-.Contenedor {
-    display: flex;
-    height: 60px;
-}
 
 /*------------------------------PARTE DE NUBIA----------------------------------*/

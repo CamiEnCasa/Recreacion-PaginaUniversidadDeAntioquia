@@ -1,0 +1,70 @@
+ /* darle color de fondo general al footer */
+    footer {
+      background-color:rgb(50,105,31); /* verde institucional */
+      color: white; /* color de texto blanco */
+      padding: 40px 60px; /* espacio interno */
+      font-family: Arial, sans-serif; /* tipografía */
+    }
+
+    /* organizar el footer en 4 columnas */
+    .footer-contenedor {
+      display: grid;
+      grid-template-columns: 1.5fr 1.1fr 1.1fr 1.1fr; /* ancho de columnas */
+      gap: 40px; /* espacio entre columnas */
+    }
+
+    /* estilos de la primera columna con logo e info */
+    .footer-logo img {
+      width: 300px; /* tamaño del logo */
+      filter: brightness(0) invert(1); /* hacer que el logo se vea blanco */
+      margin-bottom: 20px; /* espacio abajo */
+    }
+
+    /* contenedor de los iconos */
+    .footer-social {
+      display: flex;
+      gap: 15px; /* espacio entre iconos */
+      margin-bottom: 20px; /* separación con los textos */
+      font-size: 22px; /* tamaño de los iconos */
+    }
+
+    .footer-social i {
+      transition: color 0.3s ease; /* animación cambio de color */
+      cursor: pointer; /* se ve como clickeable */
+    }
+
+    .footer-social i:hover {
+      color: #cccccc; /* color gris clarito al pasar el mouse */
+    }
+
+    /* textos legales debajo del logo */
+    .footer-logo p {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      font-family: "Roboto Condensed Bold", sans-serif;
+    }
+
+    /* estilos para los títulos de cada columna */
+    .footer-col h3 {
+      font-size: 19px;
+      margin-bottom: 15px;
+      font-family: "Roboto Condensed Bold", sans-serif;
+      font-weight: bold;
+    }
+
+    /* estilos para cada texto de las columnas */
+    .footer-col p {
+      font-size: 18px;
+      line-height: 0.5;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 4px; /* bordes redondeados para hover */
+      transition: background-color 0.3s ease; /* animación suave */
+    }
+
+    /* efecto al pasar el mouse por cada texto */
+    .footer-col p:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* blanco bajito */
+      cursor: pointer; /*    */
+    }
